@@ -19,5 +19,5 @@ class Converter:
 			with io.open(f"{i}_{file_name}.md", 'w', encoding="utf-8") as md_file:
 				for heading, paragraph in zip(self.table_head, table_row):
 					if heading in self.ignored_fields: continue
-					md_file.write('# ' + heading + '\n')
-					md_file.write(paragraph + '\n')
+					md_file.write('# ' + heading + '  \n')
+					md_file.write(paragraph + '  \n')
